@@ -1,0 +1,395 @@
+/* Wireframe Styles for Gadget Universe */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Wireframe Color Scheme */
+:root {
+    --wireframe-light: #f5f5f5;
+    --wireframe-medium: #e0e0e0;
+    --wireframe-dark: #cccccc;
+    --wireframe-border: #999999;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+}
+
+/* Header Styles */
+.header {
+    background-color: var(--wireframe-light);
+    border-bottom: 2px solid var(--wireframe-border);
+    padding: 1rem;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    text-decoration: none;
+    border: 2px solid var(--wireframe-border);
+    padding: 0.5rem 1rem;
+    background-color: var(--wireframe-medium);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-item {
+    border: 2px solid var(--wireframe-border);
+    padding: 0.5rem 1rem;
+    background-color: var(--wireframe-light);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Wireframe Placeholder Boxes */
+.placeholder-box {
+    border: 2px dashed var(--wireframe-border);
+    background-color: var(--wireframe-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    font-style: italic;
+    min-height: 200px;
+}
+
+.placeholder-small {
+    min-height: 80px;
+}
+
+.placeholder-medium {
+    min-height: 150px;
+}
+
+.placeholder-large {
+    min-height: 300px;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 4rem 0;
+    margin-bottom: 3rem;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    border: 2px solid var(--wireframe-border);
+    padding: 1rem;
+    background-color: var(--wireframe-light);
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    border: 2px solid var(--wireframe-border);
+    padding: 1rem;
+    background-color: var(--wireframe-medium);
+}
+
+.cta-button {
+    background-color: var(--wireframe-dark);
+    color: var(--text-primary);
+    border: 2px solid var(--wireframe-border);
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Features Section */
+.features-section {
+    margin: 3rem 0;
+}
+
+.features-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    border: 2px solid var(--wireframe-border);
+    padding: 1rem;
+    background-color: var(--wireframe-light);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    border: 2px solid var(--wireframe-border);
+    padding: 2rem;
+    background-color: var(--wireframe-light);
+}
+
+.feature-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.feature-description {
+    color: var(--text-secondary);
+    border: 1px solid var(--wireframe-border);
+    padding: 0.5rem;
+    background-color: var(--wireframe-medium);
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.product-card {
+    border: 2px solid var(--wireframe-border);
+    background-color: var(--wireframe-light);
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    border-bottom: 2px solid var(--wireframe-border);
+}
+
+.product-info {
+    padding: 1rem;
+}
+
+.product-title {
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--wireframe-border);
+    padding: 0.5rem;
+    background-color: var(--wireframe-medium);
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    border: 1px solid var(--wireframe-border);
+    padding: 0.5rem;
+    background-color: var(--wireframe-light);
+}
+
+.add-to-cart-btn {
+    background-color: var(--wireframe-dark);
+    color: var(--text-primary);
+    border: 2px solid var(--wireframe-border);
+    padding: 0.75rem;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Filter Section */
+.filter-section {
+    border: 2px solid var(--wireframe-border);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    background-color: var(--wireframe-light);
+}
+
+.filter-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.filter-options {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-option {
+    border: 2px solid var(--wireframe-border);
+    padding: 0.5rem 1rem;
+    background-color: var(--wireframe-medium);
+    color: var(--text-primary);
+}
+
+/* Product Detail */
+.product-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: 2rem 0;
+}
+
+.product-hero {
+    border: 2px solid var(--wireframe-border);
+    background-color: var(--wireframe-light);
+}
+
+.product-specs {
+    border: 2px solid var(--wireframe-border);
+    background-color: var(--wireframe-light);
+}
+
+.specs-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--wireframe-border);
+    padding-bottom: 0.5rem;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.specs-table td {
+    border: 1px solid var(--wireframe-border);
+    padding: 0.75rem;
+    background-color: var(--wireframe-medium);
+}
+
+.specs-table td:first-child {
+    font-weight: bold;
+    background-color: var(--wireframe-light);
+}
+
+/* Related Products */
+.related-products {
+    margin-top: 3rem;
+}
+
+.related-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    text-align: center;
+    border: 2px solid var(--wireframe-border);
+    padding: 1rem;
+    background-color: var(--wireframe-light);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--wireframe-light);
+    border-top: 2px solid var(--wireframe-border);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-tagline {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    border: 1px solid var(--wireframe-border);
+    padding: 0.5rem;
+    background-color: var(--wireframe-medium);
+}
+
+.footer-copyright {
+    color: var(--text-secondary);
+    border: 1px solid var(--wireframe-border);
+    padding: 0.5rem;
+    background-color: var(--wireframe-light);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .product-detail {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .filter-options {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        padding: 1rem;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+}
